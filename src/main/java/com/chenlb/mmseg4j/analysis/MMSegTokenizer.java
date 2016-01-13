@@ -32,7 +32,7 @@ public class MMSegTokenizer extends Tokenizer {
 	}
 
 	public void reset() throws IOException {
-		super.reset();
+		super.reset();	//4.7版本此处必须
 		//lucene 4.0
 		//org.apache.lucene.analysis.Tokenizer.setReader(Reader)
 		//setReader 自动被调用, input 自动被设置。
